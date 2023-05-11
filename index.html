@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title> Pavan Kumar Settem Resume</title>
+	<title>Dog Animation</title>
+	<style type="text/css">
+		/* Set up the keyframes for the animation */
+		@keyframes move {
+			0% {left: 0px;}
+			25% {transform: scaleX(-1);}
+			50% {left: 50%;}
+			75% {transform: scaleX(1);}
+			100% {left: 0px;}
+		}
+		/* Set up the styling for the dog */
+		#dog {
+			position: absolute;
+			top: 100px;
+			left: 0px;
+			animation: move 2s ease-in-out infinite;
+		}
+	</style>
 </head>
 <body>
-    this page will have my resume
+	<!-- Add an image of the dog -->
+	<img id="dog" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Dog">
 </body>
 </html>

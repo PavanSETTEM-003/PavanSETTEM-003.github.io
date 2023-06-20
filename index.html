@@ -8,10 +8,43 @@
     <title>Pavan Kumar Settem</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .profile_pic{
+        .profile_pic {
             clip-path: circle(44.3% at 50% 50%);
 
         }
+
+        .levitate {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .levitate:hover {
+            transform: translateY(-10px);
+            box-shadow: 10px 10px 5px rgb(177, 180, 181);
+            background-color: white;
+            border-color: black;
+            border-width: 10px;
+        }
+
+        .scale-up {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .scale-up:hover {
+            transform: scale(1.1);
+        }
+
+        .copy-icon {
+            display: inline-block;
+            margin-left: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+
+        li:hover .copy-icon {
+            opacity: 1;
+        }
+        
     </style>
 </head>
 
@@ -24,22 +57,23 @@
             <a href="#Contact">Contact</a>
         </nav>
     </div>
-    <div calss="main_section" style="padding: 0px 50px 0px 100px;">
+    <div calss="main_section" style="padding: 0px 50px 25px 100px;">
         <div class="row">
-            
+
             <div class="col-8" style=" font-size: 50PX; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                 <br>
                 Hi I'm <b>Pavan Kumar Settem</b><br>
-                 a enthusiastic graduate, actively seeking a challenging position in a renowned company.<BR>
+                a enthusiastic graduate, actively seeking a challenging position in a renowned company.<BR>
 
-                <a href="https://drive.google.com/file/d/1Z6bJAsq4ifCRpsJq-rvPzjs2ah5HdHoM/view?usp=sharing" target="_blank">
-                    <button class="resume_btn" >Download Resume</button>
+                <a href="https://drive.google.com/file/d/1Z6bJAsq4ifCRpsJq-rvPzjs2ah5HdHoM/view?usp=sharing"
+                    target="_blank">
+                    <button class="resume_btn">Download Resume</button>
                 </a>
-                   
-                </div>
-                
-            <div class="col" style=" padding: 0; margin: 0;" >
-                <img class="profile_pic" src="media/github.png" alt="" style="max-width: 100%; max-height: 75%" >
+
+            </div>
+
+            <div class="col" style=" padding: 0; margin: 0;">
+                <img class="profile_pic" src="media/github.png" alt="" style="max-width: 100%; max-height: 75%">
             </div>
 
         </div>
@@ -50,7 +84,12 @@
             <div class="col-7 about shadow-lg p-3 mb-5 bg-white rounded" style="font-size: 25px;">
                 <b>About</b><br>
                 Hi! I'm Pavan Kumar Settem, an undergraduate student<br>
-                always  with a passion for continuous learning and staying updated with the latest technologies. With prior experience as an intern, I have honed my ability to adapt and excel in dynamic environments. I thrive both as a team leader and a team player, valuing collaboration and effective communication. My enthusiasm for learning drives me to seek out the latest advancements in the field, ensuring that I can contribute to projects with the most up-to-date knowledge. I believe that my dedication and enthusiasm will make a positive impact on any team or project.
+                always with a passion for continuous learning and staying updated with the latest technologies. With
+                prior experience as an intern, I have honed my ability to adapt and excel in dynamic environments. I
+                thrive both as a team leader and a team player, valuing collaboration and effective communication. My
+                enthusiasm for learning drives me to seek out the latest advancements in the field, ensuring that I can
+                contribute to projects with the most up-to-date knowledge. I believe that my dedication and enthusiasm
+                will make a positive impact on any team or project.
             </div>
         </div>
     </div>
@@ -67,17 +106,46 @@
                 <h6></h6>
                 <h5>AI ML Developer Intern | BuiltIn Tech | March 2023 - June 2023</h5>
                 <ul>
-                    <li>Collaborated with a team of four members to deliver projects in a fast-paced startup environment.</li>
-                    <li>Worked on machine learning, deep learning, natural language processing, APIs, and automation.</li>
+                    <li>Collaborated with a team of four members to deliver projects in a fast-paced startup
+                        environment.</li>
+                    <li>Worked on machine learning, deep learning, natural language processing, APIs, and automation.
+                    </li>
                     <li>Honed programming, data analysis, and project management skills.</li>
                     <li>Gained valuable experience working with a team in a startup environment.</li>
                 </ul>
-                <p>The internship at BuiltIn Tech provided me with valuable insights into the startup ecosystem and allowed me to contribute to real-world projects. It further strengthened my passion for AI and ML, and I am excited to apply the skills and knowledge I gained to future endeavors.</p>
             </div>
+            <!-- <div class="col"><p>The internship at BuiltIn Tech provided me with valuable insights into the startup ecosystem and allowed me to contribute to real-world projects. It further strengthened my passion for AI and ML, and I am excited to apply the skills and knowledge I gained to future endeavors.</p> -->
         </div>
     </div>
-    <div class="projects">
+    </div>
+    <div class="projects row" id="Projects">
+        <div class="col-1"></div>
+        <div style="margin: 20px;">
+            <h3 style="justify-content: center;"><b>Projects </b></h3>
+            <br>
+            <div class="row">
+                <div class="col-3 shadow-lg p-3 mb-5 bg-white rounded levitate scale-up " style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                    <b>Title: Langchain powerred PDF chatbot</b><br>
+                    <p>Leverage the power of Language Model Models (LLMs) to gain valuable insights from your local files.
+                        This project enables you to effortlessly extract information from PDFs by simply uploading your
+                        files. Once uploaded, you can ask questions and receive accurate responses based on the content
+                        within the documents.</p>
+                </div>
+                <div class="col-3 shadow-lg p-3 mb-5 bg-white rounded levitate scale-up" style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                    <b>Automated-Text-and-Object-Detection-with-Deep-Learning</b><br>
+                    <p>A DL model for extracting text and identifying symbols from product labels using OCR and YOLO v5 streamlines the collection of product information and assists with quality control.</p>
+                </div>
+                <div class="col-3 shadow-lg p-3 mb-5 bg-white rounded levitate scale-up" style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                    <b>State Table to Boolean Expression Converter</b><br>
+                    <p>This project aims to automate the process of converting a state diagram into a boolean expression, providing a precise and faster response even with a higher number of states. It incorporates the Quine McCluskey method, which is widely used in industry-level projects for handling large state tables.</p>
+                </div>
+            </div>
+
+        </div>
         
+        <div class="row">
+
+        </div>
     </div>
     <div class="Contact" id="Contact" style=" font-size: 25px;">
         <div class="row">
@@ -85,10 +153,28 @@
             <div class="col-6 shadow-lg p-3 mb-5 bg-white rounded ">
                 <b>Contact</b>
                 <ul style="list-style-type: none;">
-                    <li class="bi bi-telephone">    7032145527</li>
-                    <li class ="bi bi-github"> <a href="https://github.com/PavanSETTEM-003" style="text-decoration: none; color: black;"> GitHub Profile</a></li>
-                    <li class = "bi bi-linkedin"><a href="https://www.linkedin.com/in/pavankumarsettem/" style="text-decoration: none; color: black;">  LinkedIn profile</a></li>
-                    <li class="bi bi-envelope">     pavankumar.settem@gmail.com</li>
+                    <li>
+                        <span class="bi bi-telephone"></span> 7032145527
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('7032145527')"></span>
+                    </li>
+                    <li>
+                        <span class="bi bi-github"></span>
+                        <a href="https://github.com/PavanSETTEM-003" style="text-decoration: none; color: black;" target="_blank">
+                            GitHub Profile
+                        </a>
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('https://github.com/PavanSETTEM-003/')"></span>
+                    </li>
+                    <li>
+                        <span class="bi bi-linkedin"></span>
+                        <a href="https://www.linkedin.com/in/pavankumarsettem/" style="text-decoration: none; color: black;" target="_blank">
+                            LinkedIn profile
+                        </a>
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('https://www.linkedin.com/in/pavankumarsettem/')"></span>
+                    </li>
+                    <li>
+                        <span class="bi bi-envelope"></span> pavankumar.settem@gmail.com
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('pavankumar.settem@gmail.com')"></span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -98,6 +184,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <script>
+        function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+    </script>
 </body>
 
 </html>

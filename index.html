@@ -27,10 +27,13 @@
 
         .scale-up {
             transition: transform 0.3s ease-in-out;
+            
         }
 
         .scale-up:hover {
             transform: scale(1.1);
+            background-color: black;
+            color: white;
         }
 
         .copy-icon {
@@ -44,7 +47,12 @@
         li:hover .copy-icon {
             opacity: 1;
         }
-        
+
+        /* Custom CSS */
+        .custom-col {
+            width: 23%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -124,25 +132,38 @@
             <h3 style="justify-content: center;"><b>Projects </b></h3>
             <br>
             <div class="row">
-                <div class="col-3 shadow-lg p-3 mb-5 bg-white rounded levitate scale-up " style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                <div class="col-3 shadow-lg p-3 mb-5 rounded levitate scale-up custom-col "
+                    style="font-size: 20px; margin: 0px 10px 0px 10px;">
                     <b>Title: Langchain powerred PDF chatbot</b><br>
-                    <p>Leverage the power of Language Model Models (LLMs) to gain valuable insights from your local files.
+                    <p>Leverage the power of Language Model Models (LLMs) to gain valuable insights from your local
+                        files.
                         This project enables you to effortlessly extract information from PDFs by simply uploading your
                         files. Once uploaded, you can ask questions and receive accurate responses based on the content
                         within the documents.</p>
                 </div>
-                <div class="col-3 shadow-lg p-3 mb-5 bg-white rounded levitate scale-up" style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                <div class="col-3 shadow-lg p-3 mb-5 rounded levitate scale-up custom-col"
+                    style="font-size: 20px; margin: 0px 10px 0px 10px;">
                     <b>Automated-Text-and-Object-Detection-with-Deep-Learning</b><br>
-                    <p>A DL model for extracting text and identifying symbols from product labels using OCR and YOLO v5 streamlines the collection of product information and assists with quality control.</p>
+                    <p>A DL model for extracting text and identifying symbols from product labels using OCR and YOLO v5
+                        streamlines the collection of product information and assists with quality control.</p>
                 </div>
-                <div class="col-3 shadow-lg p-3 mb-5 bg-white rounded levitate scale-up" style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                <div class="col-3 shadow-lg p-3 mb-5 rounded levitate scale-up custom-col"
+                    style="font-size: 20px; margin: 0px 10px 0px 10px;">
                     <b>State Table to Boolean Expression Converter</b><br>
-                    <p>This project aims to automate the process of converting a state diagram into a boolean expression, providing a precise and faster response even with a higher number of states. It incorporates the Quine McCluskey method, which is widely used in industry-level projects for handling large state tables.</p>
+                    <p>This project aims to automate the process of converting a state diagram into a boolean
+                        expression, providing a precise and faster response even with a higher number of states. It
+                        incorporates the Quine McCluskey method, which is widely used in industry-level projects for
+                        handling large state tables.</p>
+                </div>
+                <div class="col-3 shadow-lg p-3 mb-5 rounded levitate scale-up custom-col"
+                    style="font-size: 20px; margin: 0px 10px 0px 10px;">
+                    <b>Pneumonia_detection_using_resnet</b><br>
+                    <p>This project aims to develop a deep learning-based method for detecting pneumonia in chest x-ray images using a convolutional neural network (CNN) with ResNet architecture.</p>
                 </div>
             </div>
 
         </div>
-        
+
         <div class="row">
 
         </div>
@@ -155,25 +176,31 @@
                 <ul style="list-style-type: none;">
                     <li>
                         <span class="bi bi-telephone"></span> 7032145527
-                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('7032145527')"></span>
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy"
+                            onclick="copyToClipboard('7032145527')"></span>
                     </li>
                     <li>
                         <span class="bi bi-github"></span>
-                        <a href="https://github.com/PavanSETTEM-003" style="text-decoration: none; color: black;" target="_blank">
+                        <a href="https://github.com/PavanSETTEM-003" style="text-decoration: none; color: black;"
+                            target="_blank">
                             GitHub Profile
                         </a>
-                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('https://github.com/PavanSETTEM-003/')"></span>
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy"
+                            onclick="copyToClipboard('https://github.com/PavanSETTEM-003/')"></span>
                     </li>
                     <li>
                         <span class="bi bi-linkedin"></span>
-                        <a href="https://www.linkedin.com/in/pavankumarsettem/" style="text-decoration: none; color: black;" target="_blank">
+                        <a href="https://www.linkedin.com/in/pavankumarsettem/"
+                            style="text-decoration: none; color: black;" target="_blank">
                             LinkedIn profile
                         </a>
-                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('https://www.linkedin.com/in/pavankumarsettem/')"></span>
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy"
+                            onclick="copyToClipboard('https://www.linkedin.com/in/pavankumarsettem/')"></span>
                     </li>
                     <li>
                         <span class="bi bi-envelope"></span> pavankumar.settem@gmail.com
-                        <span class="bi bi-clipboard-check copy-icon" title="Copy" onclick="copyToClipboard('pavankumar.settem@gmail.com')"></span>
+                        <span class="bi bi-clipboard-check copy-icon" title="Copy"
+                            onclick="copyToClipboard('pavankumar.settem@gmail.com')"></span>
                     </li>
                 </ul>
             </div>
